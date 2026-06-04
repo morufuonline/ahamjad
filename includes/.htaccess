@@ -1,0 +1,23 @@
+DirectoryIndex 404.php
+
+# deny all .htaccess, .DS_Store $hî†é and ._* (resource fork) files
+<Files ~ "^\.([Hh][Tt]|[Dd][Ss]_[Ss]|[_])">
+ Order allow,deny
+ Deny from all
+ Satisfy All
+</Files>
+
+# redirect errors to custom error handler
+#
+# part of 404.php from corz.org
+#
+
+
+# custom error handlers..
+# uncomment whatever you need.
+
+
+ErrorDocument 401 "<html><head><title>NO!</title></head><body><h2><tt>There is nothing here.. go away quickly!</tt></h2></body></html>
+ErrorDocument 403 "<html><head><title>NO!</title></head><body><h2><tt>There is nothing here.. go away quickly!</tt></h2></body></html>
+ErrorDocument 404 "<html><head><title>NO!</title></head><body><h2><tt>There is nothing here.. go away quickly!</tt></h2></body></html>
+ErrorDocument 500 "<html><head><title>NO!</title></head><body><h2><tt>There is nothing here.. go away quickly!</tt></h2></body></html>
